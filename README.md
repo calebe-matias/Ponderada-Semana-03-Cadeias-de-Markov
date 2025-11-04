@@ -1,6 +1,7 @@
 # Ponderada das Cadeias de Markov
 
 [![Vídeo da Ponderada](https://img.youtube.com/vi/-wHYIdgCWdY/maxresdefault.jpg)](https://www.youtube.com/watch?v=-wHYIdgCWdY)
+> Link do vídeo: https://www.youtube.com/watch?v=-wHYIdgCWdY
 
 Neste README.md apresento o resumo do que foi feito no Notebook [ponderada-markov.ipynb](ponderada-markov.ipynb) , que simula o fluxo atual do operacional do Metrô-SP utilizando **Cadeias de Markov** e o fluxo proposto com a integração de **Inteligência Artificial** e **versionamento de documentos** (Proposta do Grupo 02 - Brigadeiro/SubWay Surfers:
 
