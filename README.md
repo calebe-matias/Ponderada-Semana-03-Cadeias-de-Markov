@@ -4,10 +4,8 @@ Perfeito! Aqui está o **README.md** que eu (falando na primeira pessoa) escreve
 
 # 📘 README — Cadeias de Markov (AS-IS vs TO-BE) — Portfólio METRÔ SP
 
-## 🎯 Objetivo da atividade
 
-Esta atividade faz parte da disciplina de **Arquitetura de Software Flexível e Sustentável** do curso de **Engenharia de Software**.
-O objetivo foi **modelar e simular o fluxo de documentos corporativos do portfólio do Metrô de São Paulo** usando **cadeias de Markov**, comparando:
+Neste README.md apresento o resumo do que foi feito no Notebook **MetroSP_Markov_Simples_v2.ipynb**.
 
 * o cenário **AS-IS** (situação atual, com limitações e retrabalho);
 * o cenário **TO-BE** (proposta com integração de IA e versionamento).
@@ -16,7 +14,7 @@ A simulação foi feita conforme o tutorial **“Markov Chains in Python: Beginn
 
 ---
 
-## 🧩 Contexto do problema
+##  Contexto do problema
 
 O Metrô-SP utiliza hoje ferramentas como **Miro**, **SharePoint**, **Teams** e planilhas do **Office** para gerenciar projetos e relatórios de portfólio.
 Esse modelo apresenta **ineficiências operacionais**: conflitos de edição, falta de rastreabilidade, revisão manual e alto índice de retrabalho.
@@ -30,7 +28,7 @@ O novo sistema proposto no TAP (Termo de Abertura do Projeto) tem como meta:
 
 ---
 
-## ⚙️ Modelagem da Cadeia de Markov
+##  Modelagem da Cadeia de Markov
 
 ### Estados considerados
 
@@ -72,30 +70,30 @@ P_to_be = [
 ]
 ```
 
-➡️ Representa o fluxo **automatizado**, com **maior chance de revisão produtiva** e **quase nenhum retrabalho pós-publicação**.
+ Representa o fluxo **automatizado**, com **maior chance de revisão produtiva** e **quase nenhum retrabalho pós-publicação**.
 
 A probabilidade `Publicar → Publicar = 0.97` simboliza a **estabilidade do sistema proposto**, onde 97% dos documentos permanecem válidos e não exigem correção, graças ao versionamento, checks automáticos e auditoria.
 
 ---
 
-## 🧠 Metodologia (conforme o tutorial da DataCamp)
+## Passo a passo que segui (com base no Tutorial do DataCamp)
 
 1. Defini cada **matriz de transição** 3×3.
-2. Usei `np.random.choice(p=linha_do_estado)` para sortear o **próximo estado**.
+2. `np.random.choice(p=linha_do_estado)` para sortear o **próximo estado**.
 3. Repeti milhares de vezes (`runs=5000`) o processo com **8 passos** por simulação.
-4. Conteitei as frequências de estados finais para estimar a **probabilidade empírica** de terminar em `Publicar`.
+4. Conagem das frequências de estados finais para estimar a probabilidade de terminar em `Publicar`.
 
 Essa metodologia é exatamente a mesma apresentada no tutorial, adaptada ao contexto do Metrô-SP.
 
 ---
 
-## 📊 Resultados esperados
+## Resultado das simulações
 
 | Métrica                                 | AS-IS  | TO-BE  | Diferença                  |
 | --------------------------------------- | ------ | ------ | -------------------------- |
 | Probabilidade de terminar em `Publicar` | ≈ 0.68 | ≈ 0.90 | **+22 pontos percentuais** |
 
-Com base nessas simulações, concluo que o sistema proposto **aumenta significativamente a taxa de publicação bem-sucedida**, reduzindo o retrabalho e o tempo de ciclo de aprovação.
+Com base nessas simulações,  o sistema proposto **aumenta a taxa de publicação bem-sucedida**, reduzindo o retrabalho e o tempo de ciclo de aprovação.
 
 ---
 
@@ -109,15 +107,3 @@ O novo sistema:
 * Elimina pontos críticos de retrabalho e conflito;
 * Melhora a previsibilidade do fluxo de publicações;
 * Reforça os requisitos não funcionais de **segurança**, **rastreabilidade** e **eficiência operacional**.
-
----
-
-## 📚 Referência principal
-
-> **DataCamp — Markov Chains in Python: Beginner Tutorial**
-> (utilizado como base metodológica para definição da matriz, da simulação com `np.random.choice` e da contagem de frequências empíricas)
-> [https://www.datacamp.com/tutorial/markov-chains-python-tutorial](https://www.datacamp.com/tutorial/markov-chains-python-tutorial)
-
----
-
-Quer que eu adicione ao README um pequeno **gráfico ilustrativo da cadeia** (por exemplo, setas mostrando as transições entre Editar, Revisar e Publicar)? Isso deixaria o arquivo mais visual e explicativo para entrega.
