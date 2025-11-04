@@ -1,9 +1,6 @@
-Perfeito! Aqui está o **README.md** que eu (falando na primeira pessoa) escreveria para acompanhar o notebook **MetroSP_Markov_Simples_v2.ipynb**, explicando o objetivo, o contexto da atividade e as decisões adotadas:
+# Ponderada das Cadeias de Markov
 
----
-
-# 📘 README — Cadeias de Markov (AS-IS vs TO-BE) — Portfólio METRÔ SP
-
+[![Vídeo da Ponderada](https://img.youtube.com/vi/-wHYIdgCWdY/maxresdefault.jpg)](https://www.youtube.com/watch?v=-wHYIdgCWdY)
 
 Neste README.md apresento o resumo do que foi feito no Notebook [ponderada-markov.ipynb](ponderada-markov.ipynb) , que simula o fluxo atual do operacional do Metrô-SP utilizando **Cadeias de Markov** e o fluxo proposto com a integração de **Inteligência Artificial** e **versionamento de documentos** (Proposta do Grupo 02 - Brigadeiro/SubWay Surfers:
 
@@ -70,7 +67,7 @@ P_to_be = [
 ]
 ```
 
- Representa o fluxo **automatizado**, com **maior chance de revisão produtiva** e **quase nenhum retrabalho pós-publicação**.
+Representa o fluxo **automatizado**, com **maior chance de revisão produtiva** e **quase nenhum retrabalho pós-publicação**.
 
 A probabilidade `Publicar → Publicar = 0.97` simboliza a **estabilidade do sistema proposto**, onde 97% dos documentos permanecem válidos e não exigem correção, graças ao versionamento, checks automáticos e auditoria.
 
