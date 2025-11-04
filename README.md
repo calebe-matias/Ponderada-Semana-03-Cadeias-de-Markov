@@ -5,7 +5,7 @@ Perfeito! Aqui está o **README.md** que eu (falando na primeira pessoa) escreve
 # 📘 README — Cadeias de Markov (AS-IS vs TO-BE) — Portfólio METRÔ SP
 
 
-Neste README.md apresento o resumo do que foi feito no Notebook **MetroSP_Markov_Simples_v2.ipynb**.
+Neste README.md apresento o resumo do que foi feito no Notebook [ponderada-markov.ipynb](ponderada-markov.ipynb) , que simula o fluxo atual do operacional do Metrô-SP utilizando **Cadeias de Markov** e o fluxo proposto com a integração de **Inteligência Artificial** e **versionamento de documentos** (Proposta do Grupo 02 - Brigadeiro/SubWay Surfers:
 
 * o cenário **AS-IS** (situação atual, com limitações e retrabalho);
 * o cenário **TO-BE** (proposta com integração de IA e versionamento).
